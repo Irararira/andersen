@@ -30,6 +30,7 @@ public class FileCSV {
                 data[i][j] = Integer.parseInt(record.get(HEADERS[j]));
             }
         }
+        fileReader.close();
         return new AppData(HEADERS, data);
     }
 
